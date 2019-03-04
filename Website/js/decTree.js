@@ -224,3 +224,19 @@ function draw(){
       gauge.animationSpeed = 32; // set animation speed (32 is default value)
       gauge.set(ans); // set actual value
 }
+
+function plan() {
+    var age = document.getElementById("age").value;
+    var g = document.getElementById("genderi").value.toLowerCase();
+    var s = document.getElementById("smoker").value.toLowerCase();
+    var b = document.getElementById("bmi");
+    b = b.options[b.selectedIndex].text;
+    var r = document.getElementById("region");
+    r = r.options[r.selectedIndex].text.toLowerCase();
+    var c = document.getElementById("child").value;
+    ins[age].forEach(function(element) {
+        if(element.sex == g && element.smoker == s && element.region == r && element.bmi_buckets == b && element.c == c  ){
+            alert(element.charges);
+        }
+      });
+}
