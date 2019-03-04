@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SnackAttack - Heart Risk calculator</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Snack Attack</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Health Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Risk Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Insurance Package</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h1 class="text-uppercase text-white font-weight-bold">Heart Risk Calculator</h1>
+          <hr class="divider my-4">
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 font-weight-light mb-5">Evaluate your risk of a stroke in few seconds and save on medical bills!</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Try it now!</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0">Just answer these simple 5 questions.</h2>
+          <hr class="divider light my-4">
+          <p class="text-white-75 mb-4">No need to worry about complex blood glucose levels, cholesterol, saturated fats etc.</p>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#hyper">Get Started!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="page-section" id="hyper">
+    <div class="container">
+      <h2 class="text-center mt-0">Do you suffer from hypertension?</h2>
+      <hr class="divider my-4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-water text-primary mb-4"></i>
+            <h3 class="h4 mb-2">What's hypertension?</h3>
+            <p class="text-muted mb-0">A condition in which the force of the blood against the artery walls is too high</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="hyper(true)">Yes</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="hyper(false)">No</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="dividerFull">
+
+    <!-- Services Section -->
+    <section class="page-section" id="heart">
+      <div class="container">
+        <h2 class="text-center mt-0">Do you suffer from an existing heart disease?</h2>
+        <hr class="divider my-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-heart text-primary mb-4"></i>
+              <h3 class="h4 mb-2">What's heart disease?</h3>
+              <p class="text-muted mb-0">Any condition which affects your heart</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="heart(true)">Yes</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="heart(false)">No</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="dividerFull">
+
+    <!-- Services Section -->
+    <section class="page-section" id="work">
+      <div class="container">
+        <h2 class="text-center mt-0">What type of industry do you work in?</h2>
+        <hr class="divider my-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-building text-primary mb-4"></i>
+              <h3 class="h4 mb-2">What does my industry of work got to do with my heart?</h3>
+              <p class="text-muted mb-0">Different industries with varying stress factors are found to relate to risk of strokes.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="work(false)">Self-Employed</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="work(false)">Private Job</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="work(false)">Government Job</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="work(true)">Don't Work</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="dividerFull">
+
+    <!-- Smoking Section -->
+    <section class="page-section" id="smoke">
+      <div class="container">
+        <h2 class="text-center mt-0">Do you smoke?</h2>
+        <hr class="divider my-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-joint text-primary mb-4"></i>
+              <h3 class="h4 mb-2">Smoking is bad for your health!</h3>
+              <p class="text-muted mb-0">There's no way around it. Smoking is bad for your health. Learn the effects of smoking (how smoking harms nearly every organ) and how to <a href="https://medlineplus.gov/smoking.html">quit</a>.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="smoke(true)">Yes</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="smoke(false)">No</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="dividerFull">
+
+    <!-- Glucose Section -->
+    <section class="page-section" id="glucose">
+      <div class="container">
+        <h2 class="text-center mt-0">Do you have blood glucose levels above 95.12 mg/dl?</h2>
+        <hr class="divider my-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-tint text-primary mb-4"></i>
+              <h3 class="h4 mb-2">Blood glucose levels</h3>
+              <p class="text-muted mb-0">Blood glucose levels are indicators of any health related issues</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="glucose(false)">Yes</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="glucose(false)">No</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="dividerFull">
+
+    <!-- Married Section -->
+    <section class="page-section" id="married">
+      <div class="container">
+        <h2 class="text-center mt-0">Have you ever been married?</h2>
+        <hr class="divider my-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+              <h3 class="h4 mb-2">Marraige</h3>
+              <p class="text-muted mb-0">Did you find your special someone? They might have something to do with the health of your heart!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="marr(true)">Yes</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="marr(false)">No</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="dividerFull">
+
+    <!-- Gender Section -->
+    <section class="page-section" id="gender">
+      <div class="container">
+        <h2 class="text-center mt-0">What's your gender?</h2>
+        <hr class="divider my-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-male text-primary mb-4"></i>
+              <i class="fas fa-4x fa-female text-primary mb-4"></i>
+              <h3 class="h4 mb-2">Gender</h3>
+              <p class="text-muted mb-0">Males and females have different susceptibility to various diseases</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="gender(false)">Male</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="gender(true)">Female</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="dividerFull">
+
+    <!-- Residence Section -->
+    <section class="page-section" id="residence">
+      <div class="container">
+        <h2 class="text-center mt-0">What best describes your housing area?</h2>
+        <hr class="divider my-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-house text-primary mb-4"></i>
+              <h3 class="h4 mb-2">Housing Area</h3>
+              <p class="text-muted mb-0">Different types of areas have different impacts on a persons lifestyle and health.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="res(true)">Rural</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="res(false)">Urban</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="dividerFull">
+
+  <!-- Call to Action Section -->
+  <section class="page-section bg-dark text-white" id="results">
+    <div class="container text-center">
+      <h2 class="mb-4">Results are in!</h2>
+      <canvas id="graph" width="600" height="400"></canvas>
+      <br>
+      <a class="btn btn-light btn-xl" href="contact">Find out Insurance premiums!</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-0">Let's Get You a Customized Insurance Plan!</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-5">Ready to start get your insurance? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center">
+          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+          <div>+1 (202) 555-0149</div>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+          <!-- Make sure to change the email address in anchor text AND the link below! -->
+          <a class="d-block" href="mailto:insurance@snackattack.com">insurance@snackattack.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="small text-center text-muted">Copyright &copy; 2019 - Snack Attack</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+
+  <!-- Decision Tree-->
+  <script src="js/decTree.min.js"></script>
+
+  <!-- Gauge Chart -->
+  <script src="http://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+
+</body>
+
+</html>
