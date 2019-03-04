@@ -234,9 +234,15 @@ function plan() {
     var r = document.getElementById("region");
     r = r.options[r.selectedIndex].text.toLowerCase();
     var c = document.getElementById("child").value;
+    var found = false;
     ins[age].forEach(function(element) {
-        if(element.sex == g && element.smoker == s && element.region == r && element.bmi_buckets == b && element.c == c  ){
-            alert(element.charges);
+        if(element.sex == g && element.smoker == s && element.region == r && element.bmi_buckets == b && element.children == c  ){
+            document.getElementById("mbod").innerHTML = "Average Medical Cost : $" + element.charges + " <br> Insurance Cost : $1500";
+            found = true;
         }
       });
+    if(!found){
+        document.getElementById("mbod").innerHTML = "Average Medical Cost : $9,596 <br> Insurance Cost : $1500";
+    }
+    $('#insModal').modal('toggle');
 }
