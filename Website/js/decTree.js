@@ -209,11 +209,11 @@ function draw(){
             fractionDigits: 0  // Optional: Numerical precision. 0=round off.
           },
           staticZones: [
-            {strokeStyle: "#F03E3E", min: 4, max: 5}, // Red from 100 to 130
-            {strokeStyle: "#FFDD00", min: 3, max: 4}, // Yellow
-            {strokeStyle: "#30B32D", min: 2, max: 3}, // Green
-            {strokeStyle: "#FFDD00", min: 1, max: 2}, // Yellow
-            {strokeStyle: "#F03E3E", min: 0, max: 1}  // Red
+            {strokeStyle: "#990000", min: 4, max: 5}, 
+            {strokeStyle: "#FF7F7F", min: 3, max: 4},
+            {strokeStyle: "#FFDD00", min: 2, max: 3},
+            {strokeStyle: "#7FFF00", min: 1, max: 2}, 
+            {strokeStyle: "#006400", min: 0, max: 1}  
          ],
         
       };
