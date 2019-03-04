@@ -26,7 +26,7 @@ function hyper(val){
 
 function heart(val){
     heart_disease = val;
-    if(hypertension == false && heart_disease == false){
+    if(hypertension == false){
         var target = $("#work");
         $('html, body').animate({
             scrollTop: (target.offset().top - 72)
