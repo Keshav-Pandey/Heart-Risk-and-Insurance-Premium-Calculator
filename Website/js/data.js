@@ -1686,6 +1686,14 @@ var ins = {
       },
       {
          "sex": "male",
+         "bmi_buckets": 3,
+         "children": 0,
+         "smoker": "no",
+         "region": "northeast",
+         "charges": 2152.223
+      },
+      {
+         "sex": "male",
          "bmi_buckets": 2,
          "children": 0,
          "smoker": "no",
