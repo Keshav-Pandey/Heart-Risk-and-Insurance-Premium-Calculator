@@ -335,6 +335,52 @@
         <div class="col-lg-8 text-center">
           <h2 class="mt-0">Let's Get You a Customized Insurance Plan!</h2>
           <hr class="divider my-4">
+          <form class="form-inline">
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="inputPassword2" >Gender&nbsp;</label>
+              <select class="form-control" id="genderi">
+                  <option selected>Male</option>
+                  <option>Female</option>
+              </select>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2" >Smoker?&nbsp;</label>
+                <select class="form-control" id="smoker">
+                    <option selected>Yes</option>
+                    <option>No</option>
+                </select>
+              </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2">Region&nbsp;</label>
+                <select class="form-control" id="region">
+                    <option selected>Northeast</option>
+                    <option>Northwest</option>
+                    <option>Southeast</option>
+                    <option>Southwest</option>
+                </select>
+              </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="Age">Age&nbsp;</label>
+                <input type="text" class="form-control" id="age" placeholder="Age">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="Age">BMI&nbsp;</label>
+              <select class="form-control" id="bmi">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+              </select>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="BMI">Children&nbsp;</label>
+                <input type="text" class="form-control" id="child" placeholder="No of children">
+              </div>
+          </form>
+          <button class="btn btn-primary mb-2" onclick="plan()">Generate Plan</button>
           <p class="text-muted mb-5">Ready to start get your insurance? Give us a call or send us an email and we will get back to you as soon as possible!</p>
         </div>
       </div>
@@ -375,6 +421,8 @@
 
   <!-- Gauge Chart -->
   <script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+
+  <script src="js/data.min.js"></script>
 
 </body>
 
