@@ -324,7 +324,7 @@
       <h2 class="mb-4">Results are in!</h2>
       <canvas id="graph" width="600" height="400"></canvas>
       <br>
-      <a class="btn btn-light btn-xl" href="contact">Find out Insurance premiums!</a>
+      <a class="btn btn-light btn-xl js-scroll-trigger" href="#contact">Find out Insurance premiums!</a>
     </div>
   </section>
 
@@ -404,6 +404,25 @@
       <div class="small text-center text-muted">Copyright &copy; 2019 - Snack Attack</div>
     </div>
   </footer>
+
+  <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Medical Costs</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id ="mbod"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
